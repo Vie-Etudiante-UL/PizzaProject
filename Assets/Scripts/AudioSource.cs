@@ -5,17 +5,16 @@ using UnityEngine.Audio;
 public class AudioSource : MonoBehaviour
 {
     [Header("FX")] 
-    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceBurn, furnanceDing, zombieHit, zombieBlarg, loose;
     public AudioMixer fxMixer;
+    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceBurn, furnanceDing, zombieHit, zombieBlarg, loose;
 
     [Header("Music")]
-    public List<AudioClip> musics;
     public AudioMixer musicMixer;
+    public List<AudioClip> musics;
 
     [Header("Ambiant")] 
-    public AudioClip wind, motor, city;
     public AudioMixer ambiantMixer;
+    public AudioClip wind, motor, city;
     
     
-
 }
