@@ -38,17 +38,20 @@ public class PizzaLauncher : MonoBehaviour
         float angle = AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
         angle = Mathf.Clamp(angle, minValue, maxValue);
         launcher.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle + 90f));
-        //Debug.DrawRay(transform.position, transform.TransformDirection(new Vector3(0, 1.0f, 0.0f)) * 1000.0f, Color.yellow);
+        Debug.DrawRay(transform.position, transform.TransformDirection(new Vector3(0, 1.0f, 0.0f)) * 1000.0f, Color.yellow);
     }
     // Update is called once per frame
     void Update()
     {
+        var position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Debug.Log(position);
         if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("hello world");
             p = Instantiate(pizza, launcher.transform.position, transform.rotation);
 
-            p.GetComponent<Rigidbody2D>().velocity = launcher.transform.up * speed;
+            p.GetComponent<Rigidbody2D>().velocity = position * speed;
             Debug.Log(p.transform.forward * speed);
         }
 
