@@ -21,7 +21,6 @@ public class SpawnManager : MonoBehaviour
 
 
     void SpwanNewEnemy(){
-        SpawnPoints = SpawnPoints
         if (spawnAllowed){
             randZombie = Random.Range(0, zombiePreFab.Length);
             randSpawnPoint = Random.Range(0, spawnPoints.Length);
