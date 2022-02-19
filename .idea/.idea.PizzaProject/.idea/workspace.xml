@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f2b58a-8be0-4e06-952f-903d17306f95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.controller.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Audio/Mixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Audio/Mixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sprite/Four.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Four.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Antoine.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Antoine.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioSource.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioSource.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Furnance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Furnance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SpawnManager.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ingredients.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Tumbleweed-Project/Assets/Scripts/Sound/SoundAmbiant.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Furnance.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="25IoV2XahzueKaYg3QTWfFwjbxS" />
   <component name="ProjectViewState">
@@ -66,6 +73,8 @@
       <updated>1645223994464</updated>
       <workItem from="1645224012104" duration="2330000" />
       <workItem from="1645263411955" duration="4844000" />
+      <workItem from="1645290076820" duration="447000" />
+      <workItem from="1645291191555" duration="2063000" />
     </task>
     <servers />
   </component>

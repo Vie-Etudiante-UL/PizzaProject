@@ -4,10 +4,10 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("FX")]  
-    public AudioSource fxSource;
-
-    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurn, furnanceDing, zombieHit, zombieBlarg, loose;
+    [Header("FX")] 
+    public AudioSource fxSource; 
+    public AudioSource furnanceBurnSource;
+    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurnClip, furnanceDing, zombieHit, zombieBlarg, loose;
 
     [Header("Music")] //OK
     public AudioSource musicSource;
@@ -40,16 +40,38 @@ public class AudioManager : MonoBehaviour
         fxSource.PlayOneShot(pizzaTopping);
     }
 
-    public void playFurnanceOpen()
+    public void PlayFurnanceOpen()
     {
         fxSource.PlayOneShot(furnanceOpen);
     }
     
+    public void InitFurnanceBurn()
+    {
+        furnanceBurnSource.clip = furnanceBurnClip;
+        furnanceBurnSource.loop = true;
+    }
+
+    public bool isFurnancePlaying()
+    {
+        return furnanceBurnSource.isPlaying;
+    }
+
     public void PlayFurnanceBurn()
     {
-        fxSource.PlayOneShot(furnanceBurn);
+        if (!isFurnancePlaying())
+        {
+            furnanceBurnSource.Play();
+        }
     }
-    
+
+    public void StopFurnanceBurn()
+    {
+        if (isFurnancePlaying())
+        {
+            furnanceBurnSource.Pause();
+        }
+    }
+
     public void PlayFurnanceDing()
     {
         fxSource.PlayOneShot(furnanceDing);
@@ -78,6 +100,9 @@ public class AudioManager : MonoBehaviour
         {
             StartMusic();
         }
+        
+        InitAmbiant();
+        InitFurnanceBurn();
     }
 
     private void Update()
@@ -116,10 +141,15 @@ public class AudioManager : MonoBehaviour
     
     //AMBIANT
     //Loop un seul fichier 
-    public void StartAmbiant()
+
+    public void InitAmbiant()
     {
         ambiantSource.loop = true;
         ambiantSource.clip = ambiantSound;
+    }
+    
+    public void StartAmbiant()
+    {
         ambiantSource.Play();
     }
 
