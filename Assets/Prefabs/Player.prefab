@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2404398698069942782}
-  - component: {fileID: 4025441172810705672}
+  - component: {fileID: 2042008333}
   m_Layer: 0
   m_Name: RayCast
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 2578044950187246447}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4025441172810705672
+--- !u!114 &2042008333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,9 +40,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1544153243139966280}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af978e621daa3654c883480df93b56d1, type: 3}
+  m_Script: {fileID: 11500000, guid: b0a84392a4608f4448f6679c23724548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pizzaMunitions: 10
+  speed: 1.2
+  pizza: {fileID: 274290801524220136, guid: d5124b8f3028cfd4c857ed990d3aa74f, type: 3}
+  launcher: {fileID: 5911749591450690081}
+  minValue: -90
+  maxValue: 90
 --- !u!1 &2578044950023286963
 GameObject:
   m_ObjectHideFlags: 0
