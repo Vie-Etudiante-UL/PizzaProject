@@ -21,16 +21,11 @@ public class SpawnManager : MonoBehaviour
         SpwanNewEnemy();
     }
 
-
-<<<<<<< HEAD
-    void SpwanNewEnemy(){   
-=======
     void SpwanNewEnemy(){
->>>>>>> af2ad3d10527c2d3c1b1c7251549de4b85cee65b
         if (spawnAllowed){
             randZombie = Random.Range(0, zombiePreFab.Length);
             randSpawnPoint = Random.Range(0, spawnPoints.Length);
-            float randomTime = randomTime.Range(spwanDelay, spawnTime);
+            float randomTime = Random.Range(spwanDelay, spawnTime);
             Instantiate(zombiePreFab[randZombie], spawnPoints[randSpawnPoint].position, Quaternion.identity);
         }     
     }
