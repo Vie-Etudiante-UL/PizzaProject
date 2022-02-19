@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30f2b58a-8be0-4e06-952f-903d17306f95" name="Changes" comment="" />
+    <list default="true" id="30f2b58a-8be0-4e06-952f-903d17306f95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Audio/Mixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Audio/Mixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Antoine.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Antoine.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioSource.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioSource.cs.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,7 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioSource.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Tumbleweed-Project/Assets/Scripts/Sound/SoundAmbiant.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="25IoV2XahzueKaYg3QTWfFwjbxS" />
   <component name="ProjectViewState">
@@ -55,7 +64,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645223994464</updated>
-      <workItem from="1645224012104" duration="2124000" />
+      <workItem from="1645224012104" duration="2330000" />
+      <workItem from="1645263411955" duration="4844000" />
     </task>
     <servers />
   </component>
