@@ -34,6 +34,7 @@ public class Pizza : MonoBehaviour
         if (isDone)
         {
             furnance.pizzaStock = true;
+            Debug.Log("pizza in stock");
         }
     }
     public bool CompareLists<T>(List<T> aListA, List<T> aListB)

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - pizza
+  - ingredients
+  - sauce
+  - GameManager
   layers:
   - Default
   - TransparentFX

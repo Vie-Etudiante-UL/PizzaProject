@@ -12,6 +12,7 @@ public class Furnance : MonoBehaviour
     public bool emptyFurnance;
     public GameObject door, fire, pizza;
     private AudioManager audioManager;
+    public GameObject gameManager;
     private Pizza pizzaManager;
     public bool pizzaStock = false;
     public int pizzaReady = 0;
@@ -20,6 +21,7 @@ public class Furnance : MonoBehaviour
     void Start()
     {
         audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
         pizzaManager = GameObject.Find("Pizza").GetComponent<Pizza>();
         timer = timerValue;
         emptyFurnance = true;
@@ -105,7 +107,9 @@ public class Furnance : MonoBehaviour
         door.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         pizza.SetActive(false);
-        pizzaManager.isDone = false;
+        //pizzaManager.isDone = false;
+        
+        gameManager.GetComponent<PizzaManager>().DestroyPizza();
         yield return null;
     }
 }
