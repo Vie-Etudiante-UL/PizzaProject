@@ -14,6 +14,6 @@ public class PizzaRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Rotate(new Vector3(0, 0, Time.time));
+        transform.Rotate(new Vector3(0, 0, Time.time));
     }
 }
