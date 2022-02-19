@@ -6,7 +6,8 @@ public class AudioManager : MonoBehaviour
 {
     [Header("FX")]  
     public AudioSource fxSource;
-    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceBurn, furnanceDing, zombieHit, zombieBlarg, loose;
+
+    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurn, furnanceDing, zombieHit, zombieBlarg, loose;
 
     [Header("Music")] //OK
     public AudioSource musicSource;
@@ -37,6 +38,11 @@ public class AudioManager : MonoBehaviour
     public void PlayPizzaTopping()
     {
         fxSource.PlayOneShot(pizzaTopping);
+    }
+
+    public void playFurnanceOpen()
+    {
+        fxSource.PlayOneShot(furnanceOpen);
     }
     
     public void PlayFurnanceBurn()
@@ -95,8 +101,12 @@ public class AudioManager : MonoBehaviour
 
     void StartMusic()
     {
-        int trackNum = Random.Range(0, musics.Count);
-        musicSource.PlayOneShot(musics[trackNum]);
+        if (musics.Count > 0)
+        {
+            int trackNum = Random.Range(0, musics.Count);
+            musicSource.PlayOneShot(musics[trackNum]);
+        }
+
     }
 
     public void StopMusic()
