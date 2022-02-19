@@ -53,11 +53,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2707466007517115879, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
       propertyPath: m_Name
-      value: Salade
+      value: Olive
       objectReference: {fileID: 0}
     - target: {fileID: 8737675566783090660, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
       propertyPath: sprite
       value: 
       objectReference: {fileID: 6549697106155319491, guid: f7380b5e1ffc6b345ba7993759d51e8e, type: 3}
+    - target: {fileID: 8737675566783090660, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
+      propertyPath: inputToEnter
+      value: 282
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}

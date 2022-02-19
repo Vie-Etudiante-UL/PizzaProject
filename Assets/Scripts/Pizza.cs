@@ -7,10 +7,32 @@ public class Pizza : MonoBehaviour
 
     [SerializeField] public List<Ingredients> listIngr;
     [HideInInspector]
+    public List<Ingredients> bufferIngr;
+
     public List<Ingredients> toPutOnPizza;
     public bool isDone = false;
+    [SerializeField] List<GameObject> ingrPlace;
     // Start is called before the first frame update
-
+    private void Start()
+    {
+        bufferIngr.Clear();
+        for (int i = 0; i < listIngr.Count; i++)
+        {
+            
+            var a = Instantiate(listIngr[i]);
+            
+            bufferIngr.Add(a.GetComponent<Ingredients>());
+            a.transform.position = ingrPlace[i].transform.position;
+            a.transform.parent = ingrPlace[i].transform;
+        }
+    }
+    private void Update()
+    {
+        if (isDone)
+        {
+            // AUX FOURNEAUX
+        }
+    }
     public bool CompareLists<T>(List<T> aListA, List<T> aListB)
     {
         if (aListA == null || aListB == null || aListA.Count != aListB.Count)
@@ -46,4 +68,5 @@ public class Pizza : MonoBehaviour
         // if there are remaining elements in the lookUp, that means ListA contains elements that do not exist in ListB
         return lookUp.Count == 0;
     }
+
 }
