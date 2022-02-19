@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float speed;
+    private vector moveD;
+    CharcaterController Cac;
+
     void Start()
     {
         
