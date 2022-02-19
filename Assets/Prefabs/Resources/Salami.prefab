@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Salami
       objectReference: {fileID: 0}
+    - target: {fileID: 7425099407226647181, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
+      propertyPath: m_Text
+      value: Z
+      objectReference: {fileID: 0}
     - target: {fileID: 8737675566783090660, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
       propertyPath: id
       value: 1

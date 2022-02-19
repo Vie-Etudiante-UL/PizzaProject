@@ -11,22 +11,21 @@ public class Furnance : MonoBehaviour
     public KeyCode keyActivateFurnance;
     public bool emptyFurnance;
     public GameObject door, fire, pizza;
-    public AudioManager audio;
-    public bool pizzaStock;
+    private AudioManager audioManager;
+    private Pizza pizzaManager;
+    public bool pizzaStock = false;
     public int pizzaReady = 0;
     
     
     void Start()
     {
-        audio = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+        pizzaManager = GameObject.Find("Pizza").GetComponent<Pizza>();
         timer = timerValue;
         emptyFurnance = true;
         pizza.SetActive(false);
         door.SetActive(false);
         fire.SetActive(false);
-        
-        //TEMP
-        pizzaStock = true;
     }
     
 
@@ -57,9 +56,9 @@ public class Furnance : MonoBehaviour
         }
         else
         {
-            if (audio.isFurnancePlaying())
+            if (audioManager.isFurnancePlaying())
             {
-                audio.StopFurnanceBurn();
+                audioManager.StopFurnanceBurn();
             }
             fire.SetActive(false);
         }
@@ -70,7 +69,7 @@ public class Furnance : MonoBehaviour
         Debug.Log("Début load pizza");
         pizzaStock = false;
         door.SetActive(false);
-        audio.PlayFurnanceOpen();
+        audioManager.PlayFurnanceOpen();
         yield return new WaitForSeconds(0.5f);
         pizza.SetActive(true);
         yield return new WaitForSeconds(0.5f);
@@ -86,7 +85,7 @@ public class Furnance : MonoBehaviour
         {
             fire.SetActive(true);
         }
-        audio.PlayFurnanceBurn(); 
+        audioManager.PlayFurnanceBurn(); 
         timer = timer - 1;
 
         if (timer == 0)
@@ -98,14 +97,15 @@ public class Furnance : MonoBehaviour
     IEnumerator finishCook()
     {
         fire.SetActive(false);
-        audio.StopFurnanceBurn();
-        audio.PlayFurnanceDing();
+        audioManager.StopFurnanceBurn();
+        audioManager.PlayFurnanceDing();
         pizzaReady++;
         emptyFurnance = true;
         timer = timerValue;
         door.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         pizza.SetActive(false);
+        pizzaManager.isDone = false;
         yield return null;
     }
 }

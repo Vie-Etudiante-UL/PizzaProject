@@ -7,7 +7,7 @@ public class Ingredients : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] int id = 0;
     [SerializeField] Sprite sprite;
-    [SerializeField] KeyCode inputToEnter;
+    [SerializeField] public KeyCode inputToEnter;
     bool isOnPizza = false;
     Pizza pizza;
     private void Start()
@@ -28,7 +28,7 @@ public class Ingredients : MonoBehaviour
                 isOnPizza = true;
                 if(pizza.CompareLists<Ingredients>(pizza.bufferIngr, pizza.toPutOnPizza))
                 {
-                    Debug.Log("hfuqidhfuqi");
+                    //Debug.Log("hfuqidhfuqi");
                     pizza.isDone = true;
                 }
                 

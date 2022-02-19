@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30f2b58a-8be0-4e06-952f-903d17306f95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Fire.controller.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PizzaProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/Sprite/Four.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Sprite/Four.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AudioManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Antoine.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Antoine.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Furnance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Furnance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pizza.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pizza.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +65,8 @@
       <workItem from="1645224012104" duration="2330000" />
       <workItem from="1645263411955" duration="4844000" />
       <workItem from="1645290076820" duration="447000" />
-      <workItem from="1645291191555" duration="2063000" />
+      <workItem from="1645291191555" duration="2175000" />
+      <workItem from="1645299917465" duration="1373000" />
     </task>
     <servers />
   </component>
