@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public Transform[]  SpawnPoints;
+    public Transform[] spawnPoints;
     public GameObject[] zombiePreFab;
     public float spawnTime = 1.0f;
     public float spwanDelay = 0.3f;
@@ -15,15 +15,16 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         spawnAllowed = true;
-        InvokeRepeating("SpwanNewEnemy", spawnTime, spwanDelay);
+        //InvokeRepeating("SpwanNewEnemy, spawnTime, spwanDelay);
         SpwanNewEnemy();
     }
 
 
     void SpwanNewEnemy(){
+        SpawnPoints = SpawnPoints
         if (spawnAllowed){
             randZombie = Random.Range(0, zombiePreFab.Length);
-            randSpawnPoint = Random.Range(0, SpawnPoints.Length);
+            randSpawnPoint = Random.Range(0, spawnPoints.Length);
             Instantiate(zombiePreFab[randZombie], spawnPoints[randSpawnPoint].position, Quaternion.identity);
         }     
     }
