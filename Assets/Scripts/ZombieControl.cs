@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ZombieControl : MonoBehaviour
 {
     public float speed;
-    private vector moveD;
-    CharcaterController Cac;
+    private Vector3 moveD;
+    CharacterController Cac;
 
     void Start()
     {
