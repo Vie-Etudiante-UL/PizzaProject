@@ -6,24 +6,17 @@ public class SpawnManager : MonoBehaviour
 {
     public Transform[]  m_SpawnPoints;
     public GameObject[] m_zombiePreFab;
-    //public float spawnTime = 5f;
-    //public float spwanDelay = 3f;
-    public static bool m_spawnAllowed;
-    public int m_ennemyCount, m_randZombie, m_randSpawnPoint;
+    public float spawnTime = 5f;
+    public float spwanDelay = 3f;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_spawnAllowed = true;
-        SpwanNewEnemy();
+        SpwanNewEnemy()
     }
 
 
     void SpwanNewEnemy(){
-        if (m_spawnAllowed){
-            m_randZombie = Random.Range(0, m_zombiePreFab.Length);
-            m_randSpawnPoint = Random.Range(0, m_SpawnPoints.Length);
-            Instantiate(m_zombiePreFab[m_randZombie], m_SpawnPoints[m_randSpawnPoint].position, Quaternion.identity);
-        }     
+        Instantiate(m_zombiePreFab, m_SpawnPoints[0].transform.position, Quaternion.identity); 
     }
 }
