@@ -11,10 +11,13 @@ public class Pizza : MonoBehaviour
 
     public List<Ingredients> toPutOnPizza;
     public bool isDone = false;
+    public Furnance furnance;
     [SerializeField] List<GameObject> ingrPlace;
     // Start is called before the first frame update
     private void Start()
     {
+        furnance = GameObject.Find("Furnance").GetComponent<Furnance>();
+        
         bufferIngr.Clear();
         for (int i = 0; i < listIngr.Count; i++)
         {
@@ -30,7 +33,7 @@ public class Pizza : MonoBehaviour
     {
         if (isDone)
         {
-            // AUX FOURNEAUX
+            furnance.pizzaStock = true;
         }
     }
     public bool CompareLists<T>(List<T> aListA, List<T> aListB)

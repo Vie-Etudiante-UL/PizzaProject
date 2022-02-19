@@ -340,10 +340,10 @@ MonoBehaviour:
   start: {fileID: 0}
   pizzaThrow: {fileID: 0}
   pizzaHit: {fileID: 0}
-  pizzaTopping: {fileID: 0}
-  furnanceOpen: {fileID: 0}
-  furnanceBurnClip: {fileID: 0}
-  furnanceDing: {fileID: 0}
+  pizzaTopping: {fileID: 8300000, guid: 1778e7369c525fc43aaf248abaf797f3, type: 3}
+  furnanceOpen: {fileID: 8300000, guid: 1778e7369c525fc43aaf248abaf797f3, type: 3}
+  furnanceBurnClip: {fileID: 8300000, guid: 1778e7369c525fc43aaf248abaf797f3, type: 3}
+  furnanceDing: {fileID: 8300000, guid: 1778e7369c525fc43aaf248abaf797f3, type: 3}
   zombieHit: {fileID: 0}
   zombieBlarg: {fileID: 0}
   loose: {fileID: 0}
