@@ -19,14 +19,16 @@ public class Ingredients : MonoBehaviour
     {
         if (Input.GetKeyDown(inputToEnter) && !isOnPizza)
         {
-            Debug.Log(pizza.toPutOnPizza.Find((x) => x.id == this.id));
+            //Debug.Log(pizza.CompareLists<Ingredients>(pizza.bufferIngr, pizza.toPutOnPizza));
             if(pizza.toPutOnPizza.Find((x) => x.id == this.id) == null)
             {
+                Debug.Log(pizza.toPutOnPizza.Find((x) => x.id == this.id));
                 // ingredients added
                 pizza.toPutOnPizza.Add(this);
                 isOnPizza = true;
-                if(pizza.CompareLists<Ingredients>(pizza.listIngr, pizza.toPutOnPizza))
+                if(pizza.CompareLists<Ingredients>(pizza.bufferIngr, pizza.toPutOnPizza))
                 {
+                    Debug.Log("hfuqidhfuqi");
                     pizza.isDone = true;
                 }
                 
