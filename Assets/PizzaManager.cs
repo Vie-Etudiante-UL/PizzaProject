@@ -13,13 +13,15 @@ public class PizzaManager : MonoBehaviour
     void Start()
     {
         furnace = GameObject.Find("furnance");
-        currentPizza = Instantiate(PizzaPattern[Random.Range(0, PizzaPattern.Count-1)], transform.parent);
+        var a = PizzaPattern[Random.Range(0, PizzaPattern.Count)];
+        currentPizza = Instantiate(a, transform.parent);
         currentPizza.transform.position = pizzaPosition.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(PizzaPattern[Random.Range(0, PizzaPattern.Count)]);
         if (currentPizza.GetComponent<Pizza>().isDone)
         {
 
@@ -33,6 +35,8 @@ public class PizzaManager : MonoBehaviour
         //Debug.Log("JFIQDSJFIODS3");
         Destroy(currentPizza);
         currentPizza = null;
+        var a = PizzaPattern[Random.Range(0, PizzaPattern.Count - 1)];
+        Debug.Log("Numéro de la pizza" + a);
         currentPizza = Instantiate(PizzaPattern[Random.Range(0, PizzaPattern.Count - 1)], transform.parent);
         currentPizza.transform.position = pizzaPosition.transform.position;
     }

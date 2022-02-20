@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7428572890274437516, guid: c2bc24973d8e8ab4d9f4e9a2cb4cd7d6, type: 3}
       propertyPath: inputToEnter
-      value: 122
+      value: 113
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2bc24973d8e8ab4d9f4e9a2cb4cd7d6, type: 3}

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 448322300499398371, guid: 73f7c09e475f9e045acf3382bb428fc2, type: 3}
       propertyPath: inputToEnter
-      value: 115
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: 6550607285999170784, guid: 73f7c09e475f9e045acf3382bb428fc2, type: 3}
       propertyPath: m_Name
