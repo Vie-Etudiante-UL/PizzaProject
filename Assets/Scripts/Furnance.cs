@@ -17,6 +17,7 @@ public class Furnance : MonoBehaviour
     public int pizzaReady = 0;
     public GameObject feedBackArrow;
     GameObject arrow;
+    public int pizzaToHave = 3;
     
     
     void Start()
@@ -127,7 +128,7 @@ public class Furnance : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         pizza.SetActive(false);
         //pizzaManager.isDone = false;
-        PizzaLauncher.instance.pizzaMunitions++;
+        PizzaLauncher.instance.pizzaMunitions += pizzaToHave;
         UIManager.instance.changeMunitionsNumber();
         gameManager.GetComponent<PizzaManager>().DestroyPizza();
         Destroy(arrow);

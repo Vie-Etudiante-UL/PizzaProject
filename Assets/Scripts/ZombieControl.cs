@@ -28,6 +28,7 @@ public class ZombieControl : MonoBehaviour
         {
             Debug.Log("IS TRIGGER");
             PlayerLife.instance.playerLife--;
+            AudioManager.instance.PlayZombieHit();
             PlayerLife.instance.changeLife();
             Destroy(gameObject);
         }
