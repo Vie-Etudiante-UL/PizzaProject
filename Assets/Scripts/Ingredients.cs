@@ -68,6 +68,9 @@ public class Ingredients : MonoBehaviour
             }
 
         }
-
+        if (isOnPizza)
+        {
+            Destroy(gameObject);
+        }
     }
 }

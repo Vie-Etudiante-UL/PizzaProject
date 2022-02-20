@@ -99,6 +99,7 @@ MonoBehaviour:
   id: 0
   sprite: {fileID: 0}
   inputToEnter: 0
+  furnance: {fileID: 0}
 --- !u!1 &5033373499175102552
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d720bf09c361b484997b6c7759397019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSprite: {fileID: 0}
   downSprite: {fileID: 6946745712262401515, guid: ad989c12e348b404bbc5714f2caa3349, type: 3}
 --- !u!1 &6543722580781702188
 GameObject:
@@ -300,4 +302,4 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080

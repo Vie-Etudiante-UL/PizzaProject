@@ -51,6 +51,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1415797516190219569, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.757
+      objectReference: {fileID: 0}
+    - target: {fileID: 2707466007517115879, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 2707466007517115879, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
       propertyPath: m_Name
       value: Sauce
