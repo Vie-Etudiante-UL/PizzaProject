@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -8,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource fxSource; 
     public AudioSource furnanceBurnSource;
     public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurnClip, furnanceDing, zombieHit, zombieBlarg, loose;
+    public bool bufferFire = false;
 
     [Header("Music")] //OK
     public AudioSource musicSource;
@@ -58,17 +60,26 @@ public class AudioManager : MonoBehaviour
 
     public void PlayFurnanceBurn()
     {
-        if (!isFurnancePlaying())
+        if (!isFurnancePlaying() && !bufferFire)
         {
-            furnanceBurnSource.Play();
+            bufferFire = true;
+            StartCoroutine(PlayFurnanceBrurnDelayed());
         }
+    }
+
+    IEnumerator PlayFurnanceBrurnDelayed()
+    {
+        yield return new WaitForSeconds(1);
+        furnanceBurnSource.Play();
+        bufferFire = false;
+        yield break;
     }
 
     public void StopFurnanceBurn()
     {
         if (isFurnancePlaying())
         {
-            furnanceBurnSource.Pause();
+            furnanceBurnSource.Stop();
         }
     }
 

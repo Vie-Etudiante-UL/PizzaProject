@@ -14,10 +14,13 @@ public class Ingredients : MonoBehaviour
     Pizza pizza;
     GameObject pizzaObj;
     GameObject[] ingrPlace;
+    public Furnance furnance;
+
 
     private void Start()
     {
 
+        furnance = GameObject.Find("Furnance").GetComponent<Furnance>();
         pizza = GameObject.FindGameObjectWithTag("pizza").GetComponent<Pizza>();
         counterLayer = pizza.listIngr.Count;
         counter = 0;
@@ -55,7 +58,7 @@ public class Ingredients : MonoBehaviour
                 
                 if(pizza.CompareLists<Ingredients>(pizza.bufferIngr, pizza.toPutOnPizza))
                 {
-                    
+                    furnance.pizzaStock = true;
                     pizza.isDone = true;
                     
                 }
