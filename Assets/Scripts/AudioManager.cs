@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
 
     [Header("Music")] //OK
     public AudioSource musicSource;
-    public List<AudioClip> musics;
+    public AudioClip music;
     public bool playMusic;
 
     [Header("Ambiant")] 
@@ -160,12 +160,7 @@ public class AudioManager : MonoBehaviour
 
     void StartMusic()
     {
-        if (musics.Count > 0)
-        {
-            int trackNum = Random.Range(0, musics.Count);
-            musicSource.PlayOneShot(musics[trackNum]);
-        }
-
+        musicSource.PlayOneShot(music);
     }
 
     public void StopMusic()

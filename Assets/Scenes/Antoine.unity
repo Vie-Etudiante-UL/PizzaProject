@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 108272474}
   m_Layer: 0
-  m_Name: PauseMenuRebith
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,49 +215,9 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: clic
+      propertyPath: music
       value: 
-      objectReference: {fileID: 8300000, guid: 05b0e737593eee646869a1795c041e6a, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: loose
-      value: 
-      objectReference: {fileID: 8300000, guid: 382d161c8861ede4e8b5081532e5004d, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: pizzaHit
-      value: 
-      objectReference: {fileID: 8300000, guid: 0baa87f478dc21242bde556654b66243, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: playMusic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: pizzaThrow
-      value: 
-      objectReference: {fileID: 8300000, guid: 40db84c10755c764691d05af048945ed, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: ambiantSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 3dedb5843bbaba1409e3579200486812, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: furnanceDing
-      value: 
-      objectReference: {fileID: 8300000, guid: 08fd4a87c25744c4aad33f62f4e1466c, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: furnanceOpen
-      value: 
-      objectReference: {fileID: 8300000, guid: e3b93bc2d10548148b9324f9f757f81e, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: pizzaTopping
-      value: 
-      objectReference: {fileID: 8300000, guid: 09695765abea6c44485aa3a050d09bc5, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: furnanceBurnClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 41549f25aecb1cb48bfaa7413283fbea, type: 3}
-    - target: {fileID: 8744118799663186747, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
-      propertyPath: musics.Array.size
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: e44d1e99ffe274d4fb82967cf91fa062, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 769acca1cc060084cb626261b3519c8b, type: 3}
 --- !u!1 &416186119 stripped
@@ -1349,6 +1309,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2997837066727994996, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
   m_PrefabInstance: {fileID: 4424253480709860484}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1610461391 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5600011128229749532, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
+  m_PrefabInstance: {fileID: 4424253480709860484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610461390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d1d7d522471f4439507391d5ca86c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1610461394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,13 +1415,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1610461390}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1610461391}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1575,7 +1546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1837352090}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1610461391}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1837352090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1820,6 +1803,10 @@ PrefabInstance:
     - target: {fileID: 2554966067778644171, guid: 01f6f19d027af0246aeabebe55c7f70f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 459
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636278556846329745, guid: 01f6f19d027af0246aeabebe55c7f70f, type: 3}
+      propertyPath: m_Name
+      value: PauseMenut
       objectReference: {fileID: 0}
     - target: {fileID: 2636278556846329745, guid: 01f6f19d027af0246aeabebe55c7f70f, type: 3}
       propertyPath: m_IsActive
