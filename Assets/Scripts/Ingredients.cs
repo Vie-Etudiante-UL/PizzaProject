@@ -58,6 +58,7 @@ public class Ingredients : MonoBehaviour
                 if(pizza.CompareLists<Ingredients>(pizza.bufferIngr, pizza.toPutOnPizza))
                 {
                     furnance.pizzaStock = true;
+                    furnance.pizzaReadyToCook();
                     pizza.isDone = true;
                     
                 }

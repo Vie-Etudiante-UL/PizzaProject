@@ -16,6 +16,8 @@ public class Furnance : MonoBehaviour
     private Pizza pizzaManager;
     public bool pizzaStock = false;
     public int pizzaReady = 0;
+    public GameObject feedBackArrow;
+    GameObject arrow;
     
     
     void Start()
@@ -34,9 +36,10 @@ public class Furnance : MonoBehaviour
     void Update()
     {
         GetInputs();
+        
     }
     
-    
+   
     private void GetInputs()
     {
         if (Input.GetKeyDown(keyActivateFurnance))
@@ -64,11 +67,29 @@ public class Furnance : MonoBehaviour
             }
             fire.SetActive(false);
         }
+        if(Input.GetKeyDown(keyActivateFurnance) && timer != 1000)
+        {
+            if(arrow != null)
+            {
+                arrow.SetActive(false);
+            }
+            Debug.Log("isthereanybody");
+        }
+        if (Input.GetKeyUp(keyActivateFurnance))
+        {
+            if (arrow != null)
+            {
+                arrow.SetActive(true);
+            }
+        }
     }
 
     IEnumerator loadPizza()
     {
         Debug.Log("Début load pizza");
+        //Destroy(arrow);
+        arrow.SetActive(false);
+        //arrow = null;
         pizzaStock = false;
         door.SetActive(false);
         audioManager.PlayFurnanceOpen();
@@ -111,6 +132,15 @@ public class Furnance : MonoBehaviour
         PizzaLauncher.instance.pizzaMunitions++;
         UIManager.instance.changeMunitionsNumber();
         gameManager.GetComponent<PizzaManager>().DestroyPizza();
+        Destroy(arrow);
+        arrow = null;
         yield return null;
+    }
+    public void pizzaReadyToCook()
+    {
+        arrow = Instantiate(feedBackArrow);
+        arrow.transform.position = new Vector3(transform.Find("Input").position.x - 10, transform.Find("Input").position.y, 0);
+        
+
     }
 }

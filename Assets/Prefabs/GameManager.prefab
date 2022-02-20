@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1248213176032427460}
   - component: {fileID: 65889187}
   - component: {fileID: 65889189}
+  - component: {fileID: 1610461394}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -60,6 +61,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PizzaPattern:
+  - {fileID: 4354808979055697702, guid: 23189b1397e36204c9d4cc06cee99479, type: 3}
+  - {fileID: 4354808979055697702, guid: 23189b1397e36204c9d4cc06cee99479, type: 3}
   - {fileID: 3735452026112746442, guid: 638eaeb6624f1c94aaaeb991b041f548, type: 3}
   pizzaPosition: {fileID: 0}
+  pizzaReadyToCookPosition: {fileID: 0}
   furnace: {fileID: 0}
+--- !u!114 &1610461394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997837066727994996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6228636a03db7c43a16891c9302f812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  munitions: {fileID: 0}

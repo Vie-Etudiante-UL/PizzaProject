@@ -7,6 +7,7 @@ public class PizzaManager : MonoBehaviour
     [SerializeField] List<GameObject> PizzaPattern;
     GameObject currentPizza;
     [SerializeField] GameObject pizzaPosition;
+    [SerializeField] GameObject pizzaReadyToCookPosition;
     [SerializeField] GameObject furnace;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class PizzaManager : MonoBehaviour
         if (currentPizza.GetComponent<Pizza>().isDone)
         {
 
-            currentPizza.transform.position = new Vector3(100, 100, 100);
+            currentPizza.transform.position = pizzaReadyToCookPosition.transform.position;
 
 
         }
