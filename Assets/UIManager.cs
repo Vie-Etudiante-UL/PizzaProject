@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
         pizza = player.GetComponent<PizzaLauncher>();
         munitions.text = pizza.pizzaMunitions + "";
     }
-    public void changeScore()
+    public void changeMunitionsNumber()
     {
         munitions.text = pizza.pizzaMunitions + "";
     }

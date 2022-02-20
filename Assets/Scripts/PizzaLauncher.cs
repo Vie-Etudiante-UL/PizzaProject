@@ -53,7 +53,7 @@ public class PizzaLauncher : MonoBehaviour
 
             p.GetComponent<Rigidbody2D>().velocity = position * speed;
             pizzaMunitions--;
-            UIManager.instance.changeScore();
+            UIManager.instance.changeMunitionsNumber();
             //Debug.Log(p.transform.forward * speed);
         }
 

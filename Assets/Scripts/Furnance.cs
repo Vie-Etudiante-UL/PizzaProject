@@ -109,7 +109,7 @@ public class Furnance : MonoBehaviour
         pizza.SetActive(false);
         //pizzaManager.isDone = false;
         PizzaLauncher.instance.pizzaMunitions++;
-        UIManager.instance.changeScore();
+        UIManager.instance.changeMunitionsNumber();
         gameManager.GetComponent<PizzaManager>().DestroyPizza();
         yield return null;
     }
