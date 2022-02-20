@@ -53,6 +53,7 @@ public class Ingredients : MonoBehaviour
                 //Debug.Log(pizza.toPutOnPizza.Find((x) => x.id == this.id));
                 // ingredients added
                 pizza.toPutOnPizza.Add(this);
+                AudioManager.instance.PlayPizzaTopping();
                 isOnPizza = true;
                 
                 if(pizza.CompareLists<Ingredients>(pizza.bufferIngr, pizza.toPutOnPizza))

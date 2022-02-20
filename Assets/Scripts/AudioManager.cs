@@ -8,8 +8,9 @@ public class AudioManager : MonoBehaviour
     [Header("FX")] 
     public AudioSource fxSource; 
     public AudioSource furnanceBurnSource;
-    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurnClip, furnanceDing, zombieHit, zombieBlarg, loose;
+    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurnClip, furnanceDing, zombieHit1, zombieHit2, zombieBlarg, loose, clic;
     public bool bufferFire = false;
+    public int cycleZombie = 0;
 
     [Header("Music")] //OK
     public AudioSource musicSource;
@@ -20,11 +21,24 @@ public class AudioManager : MonoBehaviour
     public AudioSource ambiantSource;
     public AudioClip ambiantSound;
     
+    public static AudioManager instance;
+    void Awake()
+    {
+        if (instance != null)
+            Debug.LogWarning("Multiple instance of same Singleton : AudioManager");
+        instance = this;
+    }
+    
     //FX
     //C'est un peu démoniaque mais c'est plus simple pour les appeller ensuite
     public void PlayStart()
     {
         fxSource.PlayOneShot(start);
+    }
+
+    public void PlayClic()
+    {
+        fxSource.PlayOneShot(clic);
     }
     
     public void PlayPizzaThrow()
@@ -90,7 +104,16 @@ public class AudioManager : MonoBehaviour
     
     public void PlayZombieHit()
     {
-        fxSource.PlayOneShot(zombieHit);
+        if (cycleZombie == 0)
+        {
+            fxSource.PlayOneShot(zombieHit1);
+            cycleZombie = 1;
+        }
+        else
+        {
+            fxSource.PlayOneShot(zombieHit2);
+            cycleZombie = 0;
+        }
     }
 
     public void PlayZombieBlarg()

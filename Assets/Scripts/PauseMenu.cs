@@ -20,22 +20,25 @@ public class PauseMenu : MonoBehaviour
         Debug.Log(GameManager.instance.isPaused);
         
     }
-    public void resume()
+    public void Resume()
     {
         //Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
         Debug.Log("Resume");
         Time.timeScale = 1;
         GameManager.instance.isPaused = false;
+        AudioManager.instance.PlayClic();
     }
     public void OnApplicationQuit()
     {
+        AudioManager.instance.PlayClic();
         Debug.Log("Quit");
         Application.wantsToQuit += WantsToQuit;
         Application.Quit();
     }
-    public void toMenu()
+    public void ToMenu()
     {
+        AudioManager.instance.PlayClic();
         SceneManager.LoadScene(0);
     }
     private void Update()

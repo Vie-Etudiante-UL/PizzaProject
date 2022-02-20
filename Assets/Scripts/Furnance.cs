@@ -11,7 +11,6 @@ public class Furnance : MonoBehaviour
     public KeyCode keyActivateFurnance;
     public bool emptyFurnance;
     public GameObject door, fire, pizza;
-    private AudioManager audioManager;
     public GameObject gameManager;
     private Pizza pizzaManager;
     public bool pizzaStock = false;
@@ -22,7 +21,6 @@ public class Furnance : MonoBehaviour
     
     void Start()
     {
-        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         pizzaManager = GameObject.Find("Pizza").GetComponent<Pizza>();
         timer = timerValue;
@@ -61,9 +59,9 @@ public class Furnance : MonoBehaviour
         }
         else
         {
-            if (audioManager.isFurnancePlaying())
+            if (AudioManager.instance.isFurnancePlaying())
             {
-                audioManager.StopFurnanceBurn();
+                AudioManager.instance.StopFurnanceBurn();
             }
             fire.SetActive(false);
         }
@@ -92,7 +90,7 @@ public class Furnance : MonoBehaviour
         //arrow = null;
         pizzaStock = false;
         door.SetActive(false);
-        audioManager.PlayFurnanceOpen();
+        AudioManager.instance.PlayFurnanceOpen();
         yield return new WaitForSeconds(0.5f);
         pizza.SetActive(true);
         yield return new WaitForSeconds(0.5f);
@@ -108,7 +106,7 @@ public class Furnance : MonoBehaviour
         {
             fire.SetActive(true);
         }
-        audioManager.PlayFurnanceBurn(); 
+        AudioManager.instance.PlayFurnanceBurn(); 
         timer = timer - 1;
 
         if (timer == 0)
@@ -120,8 +118,8 @@ public class Furnance : MonoBehaviour
     IEnumerator finishCook()
     {
         fire.SetActive(false);
-        audioManager.StopFurnanceBurn();
-        audioManager.PlayFurnanceDing();
+        AudioManager.instance.StopFurnanceBurn();
+        AudioManager.instance.PlayFurnanceDing();
         pizzaReady++;
         emptyFurnance = true;
         timer = timerValue;
@@ -140,7 +138,5 @@ public class Furnance : MonoBehaviour
     {
         arrow = Instantiate(feedBackArrow);
         arrow.transform.position = new Vector3(transform.Find("Input").position.x - 10, transform.Find("Input").position.y, 0);
-        
-
     }
 }

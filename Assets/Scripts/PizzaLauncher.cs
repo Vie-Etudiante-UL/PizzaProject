@@ -51,6 +51,8 @@ public class PizzaLauncher : MonoBehaviour
             //Debug.Log("hello world");
             p = Instantiate(pizza, launcher.transform.position, transform.rotation);
 
+            AudioManager.instance.PlayPizzaThrow();
+            ;
             p.GetComponent<Rigidbody2D>().velocity = position * speed;
             pizzaMunitions--;
             UIManager.instance.changeMunitionsNumber();

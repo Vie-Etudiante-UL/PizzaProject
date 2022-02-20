@@ -94,3 +94,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d1d7d522471f4439507391d5ca86c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputToPause: 27
