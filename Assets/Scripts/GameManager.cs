@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
     public bool isPaused = false;
+    public bool isOver = false;
     public static GameManager instance;
     void Awake()
     {
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(PlayerLife.instance.playerLife == 0)
+        {
+            isOver = true;
+            //do game over stuff
+        }
     }
 }
