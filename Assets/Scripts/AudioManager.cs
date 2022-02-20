@@ -136,6 +136,7 @@ public class AudioManager : MonoBehaviour
         }
         
         InitAmbiant();
+        StartAmbiant();
         InitFurnanceBurn();
     }
 
@@ -179,6 +180,7 @@ public class AudioManager : MonoBehaviour
     
     public void StartAmbiant()
     {
+        Debug.Log("PIZAAAAAAAAA");
         ambiantSource.Play();
     }
 

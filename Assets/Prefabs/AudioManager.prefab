@@ -352,8 +352,7 @@ MonoBehaviour:
   bufferFire: 0
   cycleZombie: 0
   musicSource: {fileID: 8918561782411370250}
-  musics:
-  - {fileID: 0}
+  music: {fileID: 8300000, guid: e44d1e99ffe274d4fb82967cf91fa062, type: 3}
   playMusic: 1
   ambiantSource: {fileID: 5681592909188388267}
   ambiantSound: {fileID: 8300000, guid: 62c7ce8d019e97a44938b67327709c08, type: 3}

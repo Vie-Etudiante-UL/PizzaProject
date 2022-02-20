@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-        AudioManager.instance.StartAmbiant();
     }
 
     // Update is called once per frame
