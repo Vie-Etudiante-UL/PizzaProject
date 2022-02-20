@@ -237,22 +237,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: duration
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: spawnTime
-      value: 1.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: ennemyCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: spawnPoints.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
       propertyPath: spawnPoints.Array.data[1]
       value: 
       objectReference: {fileID: 1522343557}
@@ -264,57 +248,12 @@ PrefabInstance:
       propertyPath: spawnPoints.Array.data[3]
       value: 
       objectReference: {fileID: 718867000}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: zombiePreFab.Array.data[0]
-      value: 
-      objectReference: {fileID: 4531680093347020387, guid: 44beb45b56dcc464893cce8be81f4a84, type: 3}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: curveSpawn.m_Curve.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: curveSpawn.m_Curve.Array.data[1].time
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: curveSpawn.m_Curve.Array.data[1].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: curveSpawn.m_Curve.Array.data[0].inSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148457, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: curveSpawn.m_Curve.Array.data[0].outSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 682823113851148458, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 682823113851148458, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
       propertyPath: m_Name
       value: SpawnZone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
---- !u!1 &499321127 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 682823113851148458, guid: 0cbe0397f2d9259428512140c927ced6, type: 3}
-  m_PrefabInstance: {fileID: 463676727}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &499321130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499321127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5d8a77cc6705f34eb3f1a2710bf1a6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &507165306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4100353075143544203, guid: 075f7e931c0ee134888607fc88097553, type: 3}
