@@ -46,12 +46,14 @@ public class PizzaLauncher : MonoBehaviour
         var position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         //Debug.Log(position);
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && pizzaMunitions > 0)
         {
             //Debug.Log("hello world");
             p = Instantiate(pizza, launcher.transform.position, transform.rotation);
 
             p.GetComponent<Rigidbody2D>().velocity = position * speed;
+            pizzaMunitions--;
+            UIManager.instance.changeScore();
             //Debug.Log(p.transform.forward * speed);
         }
 
