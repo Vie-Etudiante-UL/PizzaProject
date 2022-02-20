@@ -33,7 +33,8 @@ public class ZombieControl : MonoBehaviour
         }
         if (other.gameObject.tag == "projectile")
         {
-            Destroy(gameObject);
+            GetComponent<Animator>().SetBool("isDead", true);
+            Destroy(gameObject, 1);
         }
     }
 }

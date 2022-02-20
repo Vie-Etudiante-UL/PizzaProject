@@ -33,6 +33,7 @@ public class SpawnManager : MonoBehaviour
         {
             ennemyCount++;
             bufferTimer = timer.Time;
+            difficultyCap += 10;
         }
         //Debug.Log(timer.Time);
     }
