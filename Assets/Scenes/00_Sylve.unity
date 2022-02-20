@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &343583862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3652005425428093434, guid: 0bceb1f75903a5440b84d6725dca2fb9, type: 3}
+  m_PrefabInstance: {fileID: 1422163098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &343583864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343583862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a996851aa5b7004badffa8cf1b2ee5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseSprite: {fileID: -4881390320283864150, guid: ad989c12e348b404bbc5714f2caa3349, type: 3}
+  downSprite: {fileID: 6946745712262401515, guid: ad989c12e348b404bbc5714f2caa3349, type: 3}
 --- !u!1 &395153081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4854257931037436799, guid: 0bceb1f75903a5440b84d6725dca2fb9, type: 3}
@@ -969,7 +988,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Furnance
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7683714787858404011, guid: 0bceb1f75903a5440b84d6725dca2fb9, type: 3}
+      propertyPath: baseSprite
+      value: 
+      objectReference: {fileID: -4881390320283864150, guid: ad989c12e348b404bbc5714f2caa3349, type: 3}
+    m_RemovedComponents:
+    - {fileID: 7683714787858404011, guid: 0bceb1f75903a5440b84d6725dca2fb9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0bceb1f75903a5440b84d6725dca2fb9, type: 3}
 --- !u!1 &1459514632
 GameObject:
@@ -1371,6 +1395,22 @@ PrefabInstance:
       propertyPath: pizzaPosition
       value: 
       objectReference: {fileID: 2108972852}
+    - target: {fileID: 65889189, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
+      propertyPath: PizzaPattern.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 65889189, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
+      propertyPath: PizzaPattern.Array.data[0]
+      value: 
+      objectReference: {fileID: 4354808979055697702, guid: 23189b1397e36204c9d4cc06cee99479, type: 3}
+    - target: {fileID: 65889189, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
+      propertyPath: PizzaPattern.Array.data[1]
+      value: 
+      objectReference: {fileID: 4354808979055697702, guid: 23189b1397e36204c9d4cc06cee99479, type: 3}
+    - target: {fileID: 65889189, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
+      propertyPath: PizzaPattern.Array.data[2]
+      value: 
+      objectReference: {fileID: 3735452026112746442, guid: 638eaeb6624f1c94aaaeb991b041f548, type: 3}
     - target: {fileID: 1248213176032427460, guid: 7af6d1067b081584787be46a8f9d2bb2, type: 3}
       propertyPath: m_RootOrder
       value: 8
