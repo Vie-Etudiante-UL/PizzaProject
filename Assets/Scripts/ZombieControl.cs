@@ -34,6 +34,8 @@ public class ZombieControl : MonoBehaviour
         if (other.gameObject.tag == "projectile")
         {
             GetComponent<Animator>().SetBool("isDead", true);
+            GetComponent<BoxCollider>().enabled = false;
+            AudioManager.instance.PlayZombieBlarg();
             Destroy(gameObject, 1);
         }
     }
