@@ -13,6 +13,7 @@ public class SpawnManager : MonoBehaviour
     public int ennemyCount, randZombie, randSpawnPoint;
     Vector2 spawnPoint;
     [SerializeField] Timer timer;
+    [SerializeField] int difficultyCap = 10;
     public float bufferTimer;
 
     // Start is called before the first frame update
@@ -27,9 +28,9 @@ public class SpawnManager : MonoBehaviour
     }
     private void Update()
     {
-        if(timer.Time - bufferTimer >= 10)
+        if(timer.Time - bufferTimer >= difficultyCap)
         {
-            //ennemyCount++;
+            ennemyCount++;
             bufferTimer = timer.Time;
         }
         Debug.Log(timer.Time);
@@ -53,7 +54,7 @@ public class SpawnManager : MonoBehaviour
         {
             
             yield return new WaitForSeconds(duration);
-            Debug.Log("JE SUIS DANS LA COROUTINE");
+            //Debug.Log("JE SUIS DANS LA COROUTINE");
             var a = (int)Random.Range(1, ennemyCount);
             SpwanNewEnemy(a);
         }
