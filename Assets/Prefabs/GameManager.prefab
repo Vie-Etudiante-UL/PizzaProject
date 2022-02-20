@@ -46,10 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df617f18234baf6488280577b5ab30bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 2800000, guid: e294934e5f4336e489a717b04c1f3aee, type: 3}
+  cursorTexture: {fileID: 2800000, guid: acb2605556c592041bd188990ccdc2d9, type: 3}
   cursorMode: 1
   hotSpot: {x: 0, y: 0}
   isPaused: 0
+  isOver: 0
 --- !u!114 &65889189
 MonoBehaviour:
   m_ObjectHideFlags: 0

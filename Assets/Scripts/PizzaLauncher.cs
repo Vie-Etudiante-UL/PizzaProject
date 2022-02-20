@@ -46,7 +46,7 @@ public class PizzaLauncher : MonoBehaviour
         var position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         position = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         //Debug.Log(position);
-        if (Input.GetButtonDown("Fire1") && pizzaMunitions > 0)
+        if (Input.GetButtonDown("Fire1") && pizzaMunitions > 0 && !GameManager.instance.isPaused)
         {
             //Debug.Log("hello world");
             p = Instantiate(pizza, launcher.transform.position, transform.rotation);
