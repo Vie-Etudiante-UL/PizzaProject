@@ -347,13 +347,14 @@ MonoBehaviour:
   zombieHit1: {fileID: 8300000, guid: 837947b28b7e9374a882ba4250816d0e, type: 3}
   zombieHit2: {fileID: 8300000, guid: 9f7d1180d90ae9b4ea34be0e3724eaf2, type: 3}
   zombieBlarg: {fileID: 8300000, guid: 3dedb5843bbaba1409e3579200486812, type: 3}
-  loose: {fileID: 8300000, guid: 382d161c8861ede4e8b5081532e5004d, type: 3}
   clic: {fileID: 8300000, guid: 05b0e737593eee646869a1795c041e6a, type: 3}
   bufferFire: 0
   cycleZombie: 0
   musicSource: {fileID: 8918561782411370250}
   music: {fileID: 8300000, guid: e44d1e99ffe274d4fb82967cf91fa062, type: 3}
+  looseMusic: {fileID: 8300000, guid: 382d161c8861ede4e8b5081532e5004d, type: 3}
   playMusic: 1
+  isLost: 0
   ambiantSource: {fileID: 5681592909188388267}
   ambiantSound: {fileID: 8300000, guid: 62c7ce8d019e97a44938b67327709c08, type: 3}
 --- !u!82 &1740419203643923140

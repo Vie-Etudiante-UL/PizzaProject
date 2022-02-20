@@ -8,14 +8,16 @@ public class AudioManager : MonoBehaviour
     [Header("FX")] 
     public AudioSource fxSource; 
     public AudioSource furnanceBurnSource;
-    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurnClip, furnanceDing, zombieHit1, zombieHit2, zombieBlarg, loose, clic;
+    public AudioClip start, pizzaThrow, pizzaHit, pizzaTopping, furnanceOpen, furnanceBurnClip, furnanceDing, zombieHit1, zombieHit2, zombieBlarg, clic;
     public bool bufferFire = false;
     public int cycleZombie = 0;
 
     [Header("Music")] //OK
     public AudioSource musicSource;
     public AudioClip music;
-    public bool playMusic;
+    public AudioClip looseMusic;
+    public bool playMusic = true;
+    public bool isLost = false;
 
     [Header("Ambiant")] 
     public AudioSource ambiantSource;
@@ -123,7 +125,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayLoose()
     {
-        fxSource.PlayOneShot(loose);
+        fxSource.PlayOneShot(looseMusic);
     }
  
     
@@ -133,6 +135,10 @@ public class AudioManager : MonoBehaviour
         if (playMusic)
         {
             StartMusic();
+        }
+        else if (isLost)
+        {
+            PlayLoose();
         }
         
         InitAmbiant();
@@ -165,6 +171,11 @@ public class AudioManager : MonoBehaviour
     public void StartMusic()
     {
         musicSource.PlayOneShot(music);
+    }
+    
+    public void StartLostMusic()
+    {
+        musicSource.PlayOneShot(looseMusic);
     }
 
     public void StopMusic()
