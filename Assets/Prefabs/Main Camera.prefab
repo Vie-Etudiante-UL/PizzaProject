@@ -273,8 +273,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -157.20001}
-  m_SizeDelta: {x: -1620, y: -1040}
+  m_AnchoredPosition: {x: 0, y: -13.419983}
+  m_SizeDelta: {x: -1620, y: -1327.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4813332025138909251
 CanvasRenderer:
@@ -1237,8 +1237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 141.54999}
-  m_SizeDelta: {x: -1620, y: -1040}
+  m_AnchoredPosition: {x: 0, y: 284.73}
+  m_SizeDelta: {x: -1620, y: -1326.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7080207027443102053
 CanvasRenderer:
@@ -1410,8 +1410,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.25}
-  m_SizeDelta: {x: -1620, y: -1040}
+  m_AnchoredPosition: {x: 0, y: 127.72998}
+  m_SizeDelta: {x: -1620, y: -1315.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4960638687327258898
 CanvasRenderer:
@@ -1598,7 +1598,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 3262727957622152882}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 15.9
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1660,7 +1660,7 @@ GameObject:
   - component: {fileID: 8903924217163657399}
   - component: {fileID: 4513146749364725738}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: PizzasNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FQDSFQSDFQS
+  m_text: Pizzas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
