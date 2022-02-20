@@ -17,7 +17,7 @@ public class Furnance : MonoBehaviour
     public int pizzaReady = 0;
     public GameObject feedBackArrow;
     GameObject arrow;
-    public int pizzaToHave = 3;
+    public int pizzaToHave = 4;
     
     
     void Start()
