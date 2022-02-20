@@ -8,6 +8,7 @@ TagManager:
   - ingredients
   - sauce
   - GameManager
+  - zombie
   layers:
   - Default
   - TransparentFX

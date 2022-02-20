@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 682823113851148456}
   - component: {fileID: 682823113851148457}
+  - component: {fileID: 499321130}
   m_Layer: 0
   m_Name: SpawnZone
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -45,10 +46,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoints:
   - {fileID: 682823113851148456}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   zombiePreFab:
-  - {fileID: 274290801524220136, guid: d5124b8f3028cfd4c857ed990d3aa74f, type: 3}
-  spawnTime: 1
+  - {fileID: 4531680093347020387, guid: 44beb45b56dcc464893cce8be81f4a84, type: 3}
+  spawnTime: 1.03
   spwanDelay: 0.3
-  ennemyCount: 292
+  duration: 4
+  ennemyCount: 2
   randZombie: 0
   randSpawnPoint: 0
+  bufferTimer: 0
+--- !u!114 &499321130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682823113851148458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d8a77cc6705f34eb3f1a2710bf1a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

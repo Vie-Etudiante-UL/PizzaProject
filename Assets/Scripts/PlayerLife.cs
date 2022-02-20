@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-    [SerializeField] int playerLife = 10;
+    [SerializeField] public int playerLife = 10;
     public static PlayerLife instance;
     void Awake()
     {
