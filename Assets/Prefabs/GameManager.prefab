@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 65889187}
   - component: {fileID: 65889189}
   - component: {fileID: 1610461394}
+  - component: {fileID: 5600011128229749532}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -48,6 +49,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: e294934e5f4336e489a717b04c1f3aee, type: 3}
   cursorMode: 1
   hotSpot: {x: 0, y: 0}
+  isPaused: 0
 --- !u!114 &65889189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PizzaPattern:
   - {fileID: 4354808979055697702, guid: 23189b1397e36204c9d4cc06cee99479, type: 3}
-  - {fileID: 4354808979055697702, guid: 23189b1397e36204c9d4cc06cee99479, type: 3}
+  - {fileID: 5380013394977822185, guid: 74988e670cef13049aa70eb82a1134d0, type: 3}
   - {fileID: 3735452026112746442, guid: 638eaeb6624f1c94aaaeb991b041f548, type: 3}
   pizzaPosition: {fileID: 0}
   pizzaReadyToCookPosition: {fileID: 0}
@@ -80,3 +82,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   munitions: {fileID: 0}
+--- !u!114 &5600011128229749532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2997837066727994996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d1d7d522471f4439507391d5ca86c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
