@@ -108,7 +108,8 @@ public class Furnance : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         pizza.SetActive(false);
         //pizzaManager.isDone = false;
-        
+        PizzaLauncher.instance.pizzaMunitions++;
+        UIManager.instance.changeScore();
         gameManager.GetComponent<PizzaManager>().DestroyPizza();
         yield return null;
     }
