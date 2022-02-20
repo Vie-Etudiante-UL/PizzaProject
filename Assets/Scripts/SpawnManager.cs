@@ -10,6 +10,7 @@ public class SpawnManager : MonoBehaviour
     public float spwanDelay = 0.3f;
     [SerializeField] float duration = 1;
     public static bool spawnAllowed;
+    public bool isRandom = false;
     public int ennemyCount, randZombie, randSpawnPoint;
     Vector2 spawnPoint;
     [SerializeField] Timer timer;
@@ -33,17 +34,30 @@ public class SpawnManager : MonoBehaviour
             ennemyCount++;
             bufferTimer = timer.Time;
         }
-        Debug.Log(timer.Time);
+        //Debug.Log(timer.Time);
     }
     void SpwanNewEnemy(int zombieCount){
         for (int i = 0; i < zombieCount; i++)
         {
-            if (spawnAllowed)
+            if (spawnAllowed && !isRandom)
             {
                 randZombie = Random.Range(0, zombiePreFab.Length);
+                Debug.Log(randZombie);
                 randSpawnPoint = Random.Range(0, spawnPoints.Length);
                 float randomTime = Random.Range(spwanDelay, spawnTime);
                 Instantiate(zombiePreFab[randZombie], spawnPoints[randSpawnPoint].position, Quaternion.identity);
+            }
+            else if (spawnAllowed && isRandom)
+            {
+                if(Random.Range(0, 7) <= 4)
+                {
+                    randZombie = Random.Range(0, zombiePreFab.Length);
+                    Debug.Log(randZombie);
+                    randSpawnPoint = Random.Range(0, spawnPoints.Length);
+                    float randomTime = Random.Range(spwanDelay, spawnTime);
+                    Instantiate(zombiePreFab[randZombie], spawnPoints[randSpawnPoint].position, Quaternion.identity);
+                }
+
             }
         }
   
