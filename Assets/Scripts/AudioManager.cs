@@ -136,7 +136,10 @@ public class AudioManager : MonoBehaviour
         }
         
         InitAmbiant();
-        StartAmbiant();
+        if (GameObject.Find("GameManager") != null)
+        {
+            StartAmbiant();
+        }
         InitFurnanceBurn();
     }
 
@@ -159,7 +162,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void StartMusic()
+    public void StartMusic()
     {
         musicSource.PlayOneShot(music);
     }
