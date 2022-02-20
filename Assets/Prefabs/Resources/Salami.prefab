@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: -4523916357733490711, guid: f7380b5e1ffc6b345ba7993759d51e8e, type: 3}
     - target: {fileID: 8737675566783090660, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
       propertyPath: inputToEnter
-      value: 283
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9008542624433864759, guid: 1b4281699f7d98b41b87affd3f76a8c7, type: 3}
       propertyPath: m_Size.x

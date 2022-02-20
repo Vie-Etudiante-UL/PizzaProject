@@ -16,7 +16,6 @@ public class Ingredients : MonoBehaviour
     GameObject[] ingrPlace;
     public Furnance furnance;
 
-
     private void Start()
     {
 
